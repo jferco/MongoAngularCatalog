@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-root',
@@ -6,17 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'catalogoMongo';
+  title = 'Catalogo Angular';
 
-  items:any[]=[
-    {"title":"iPad", "img": "ipad.jpeg", "description": "Tableta Apple iPad"},
-    {"title":"Blusa", "img": "blusa.jpg", "description": "Blusa Azul"},
-    {"title":"Zapatos", "img": "zapatos.jpeg", "description": "Zapatos Vino"},
-    {"title":"Bolso", "img": "bolso.jpg", "description": "Bolso para laptop"},
-    {"title":"Laptop", "img": "laptop.jpg", "description": "Laptop Razer Blade"}
-  ];
 
   constructor (){
+
   }
 
 

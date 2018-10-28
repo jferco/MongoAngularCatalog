@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let item of items">
+      <div class="card mb-4 box-shadow" > 
+        <!-- todas las imagenes se deben agregar en la carpeta /assets/img -->
+        <img class="card-img-top" src="../assets/img/{{item.img}}" alt="">
+        <div class="card-body">
+          <h3 class="card-text">{{item.title}}</h3>
+          <p class="card-text">
+            {{item.description}}
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- routerLink navega a la dirección que se quiera, utilizando las rutas definidas en router.
+              Aquí se puede apreciar como se envía el id del objeto por el parámetro ':id'
+              -->
+              <button routerLink="/product/{{item.id}}" type="button" class="btn btn-primary">Ver</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
